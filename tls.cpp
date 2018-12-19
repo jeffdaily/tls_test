@@ -9,10 +9,13 @@ int main(int argc, char **argv)
 {
     Inc inc;
     IncTLS inc_tls;
-    int count = 100;
+    int count;
 
     if (2 == argc) {
         count = std::atoi(argv[1]);
+    }
+    else {
+        count = 100000;
     }
 
     std::cout << "count = " << count << std::endl;
